@@ -1,0 +1,95 @@
+---
+layout:     post
+title:      LeetCode001-Two Sum
+subtitle:   sum
+date:       2018-10-29
+author:     coding-zen
+header-img: img/home.jpg
+catalog: true
+tags:
+    - leetcode
+---
+
+Given an array of integers, return **indices** of the two numbers such that they add up to a specific target.
+
+You may assume that each input would have **exactly** one solution, and you may not use the *same* element twice.
+
+**Example:**
+
+```
+Given nums = [2, 7, 11, 15], target = 9,
+
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+```
+
+```java
+import java.util.HashMap;
+import java.util.Map;
+
+class Solution {
+
+      /*要调用一个对象类的方法，有两种方法。
+                （1）是新建一个对象，然后调用该对象的方法.
+                （2）该方法是public，static。
+                java类有两种方法一种是类方法就是用static修饰的，一种是实例方法，就是没有static修饰的方法。类方法可以同时类名.方法名的方式调用。而实例方法必须先生存类的实例在通过实例.方法名的方式调用。
+    */
+
+    
+    //暴力法
+    public static int[] twoSum(int[] nums, int target) {
+        for (int i = 0; i < nums.length-1; i++) {
+            for (int j = i+1; j < nums.length; j++) {
+                if (nums[i] + nums[j] == target)
+                    return new int[]{i,j}; //返回 初始化匿名数组 用于参数传递
+            }
+        }
+        //return null;
+        throw new IllegalArgumentException("No two sum solution");
+        //异常问题有待研究
+    }
+
+
+    public static int[] twoSum2(int[] nums, int target) {
+           /*Map是接口，hashMap是Map的一种实现。接口不能被实例化。
+Map map=new HashMap(); 就是将map实例化成一个hashMap。这样做的好处是调用者不需要知道map具体的实现，map接口与具体实现的映射java帮你做了。
+	有待研究
+*/
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            map.put(nums[i], i);
+        }
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (map.containsKey(complement) && map.get(complement) != i) {
+                //该目标元素不能是 nums[i]本身
+                return new int[] { i, map.get(complement) };
+            }
+        }
+        throw new IllegalArgumentException("No two sum solution");
+    }
+
+    //思路较难想，放弃
+    public static int[] twoSum3(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (map.containsKey(complement)) {
+                return new int[] { map.get(complement), i };
+            }
+            map.put(nums[i], i);
+        }
+        throw new IllegalArgumentException("No two sum solution");
+    }
+
+    //测试
+    public static void main(String[] args) {
+        int[] nums  = {2,7,11,15};
+        int target = 9;
+        int[] ret= twoSum(nums,target);
+        System.out.println("index1="+ret[0]+", index2="+ret[1]);
+    }
+
+}
+```
+
