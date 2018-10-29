@@ -1,13 +1,13 @@
 ---
 layout:     post
-title:      LeetCode001-Two Sum
-subtitle:   sum
+title:      LeetCode001
+subtitle:   Two Sum
 date:       2018-10-29
 author:     coding-zen
 header-img: img/home.jpg
 catalog: true
 tags:
-    -LeetCode
+    -Leetcode
 ---
 
 Given an array of integers, return **indices** of the two numbers such that they add up to a specific target.
