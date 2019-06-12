@@ -1,4 +1,4 @@
-## [我的博客在这里 &rarr;](http://ctrlcoder.github.io)
+## [我的博客](http://ctrlcoder.github.io)
 
 ## 致谢
 
