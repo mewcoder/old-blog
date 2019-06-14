@@ -11,14 +11,14 @@ github_repo: "https://github.com/ctrlcoder/ctrlcoder.github.io.git" # you code r
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "世事无常，精进不已。"
+sidebar-about-description: "终身学习者"
 sidebar-avatar: /img/1.gif      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # SNS settings
 RSS: false
-#weibo_username:     phonetech
+weibo_username:     phonetech
 #zhihu_username:     coding-zen
 github_username:    ctrlcoder
 #facebook_username:  baiying.qiu.7
@@ -98,11 +98,17 @@ service-worker: true
 
 # Friends
 friends: [
-    {  
-        title: "Google",
-        href: "https://www.google.com"
+     {  
+        title: "开源中国",
+        href: "https://www.oschina.net/"
+    },{  
+        title: "掘进",
+        href: "https://juejin.im/"
     },{
-        title: "Github",
-        href: "https://www.github.com"
+        title: "思否",
+        href: "https://segmentfault.com/"
+    },{
+        title: "V2EX",
+        href: "https://www.v2ex.com/"
     }
 ]
