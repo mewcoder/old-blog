@@ -99,9 +99,6 @@ service-worker: true
 # Friends
 friends: [
      {  
-        title: "开源中国",
-        href: "https://www.oschina.net/"
-    },{  
         title: "掘金",
         href: "https://juejin.im/"
     },{
@@ -110,5 +107,14 @@ friends: [
     },{
         title: "V2EX",
         href: "https://www.v2ex.com/"
+    },{
+        title: "Readhub",
+        href: "https://readhub.cn/"
+    },{
+        title: "开源中国",
+        href: "https://www.oschina.net/"
+    },{
+        title: "开发者头条",
+        href: "https://toutiao.io/posts/hot/7"
     }
 ]
