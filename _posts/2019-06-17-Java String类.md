@@ -11,8 +11,6 @@ tags:
 typora-root-url: ..
 ---
 
-
-
 ## String类
 
 ### ☆面试题：`String str1 = 'A'` 与 `String str2 = new String("A")`区别？
