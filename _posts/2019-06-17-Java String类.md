@@ -13,7 +13,7 @@ typora-root-url: ..
 
 ## String类
 
-### ☆面试题：`String str1 = 'A'` 与 `String str2 = new String("A")`区别？
+### ☆面试题：String str1 = 'A'与 String str2 = new String("A")区别？
 
 - 当执行第1句话的时候，会在常量池中添加一个新的A字符，str1指向常量池的A
 - 当执行第2句话的时候，因为有new操作符，所以会在堆空间新开辟一块空间用来存储新的String对象，因为此时常量池中已经有了A字符，所以堆中的String对象指向常量池中的A，而str2则指向堆空间中的String对象。
