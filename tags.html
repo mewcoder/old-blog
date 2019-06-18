@@ -44,15 +44,16 @@ header-img: "img/home.jpg"
                     <span class="tag-text">{{ tag[0] }}</span>
                 </span>
 				{% for post in tag[1] %}
-					<!-- li -->	
+					<!--
 				  <li class="listing-item">
 				  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
 				  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
 				  </li> 
+				  -->	
 				 <div class="post-preview">
 				    <a href="{{ post.url | prepend: site.baseurl }}">
 				        <h2 class="post-title">
-                            {{ post.title }}
+                            {{ post.date | date:"%Y-%m-%d" }}{{ post.title }}
 				        </h2>
 				        {% if post.subtitle %}
 				        <h3 class="post-subtitle">
