@@ -1,12 +1,11 @@
 ---
-layout: page-nav
-title: Resource
+layout: page
+title: resource
 permalink: /resource/
-description: 资源导航
-header-img: "img/header.jpg"
+header-img: "img/home.jpg"
 ---
 
-## 实用网站整理
+##### 实用网站整理
 
-[UsefulWebSites](<https://ctrlcoder.github.io/UsefulWebSites/>)
+- [UsefulWebSites](<https://ctrlcoder.github.io/UsefulWebSites/>)
 

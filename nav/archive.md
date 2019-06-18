@@ -2,7 +2,7 @@
 layout: page
 title: archive
 permalink: /archive/
-header-img: "img/head.jpg"
+header-img: "img/home.jpg"
 ---
 
 ### Blogs
