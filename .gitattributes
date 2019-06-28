@@ -1,4 +1,5 @@
-
-
-*.css linguist-language=html
-
+*.yml linguist-language=Javascript
+*.html linguist-language=Javascript 
+*.js linguist-language=Javascript
+*.xml linguist-language=Javascript
+*.css linguist-language=Javascript
