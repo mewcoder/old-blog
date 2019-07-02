@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Spring Boot入门（二）
-subtitle:   
+subtitle:   SpringBoot原理分析
 date:       2019-06-22
 author:     ctrlcoder
 header-img: 
@@ -10,8 +10,6 @@ tags:
     - Spring Boot
 typora-root-url: ..
 ---
-
-# SpringBoot原理分析
 
 ## 配置文件分析
 
