@@ -46,3 +46,4 @@ typora-root-url: ..
 然后 Shift+Ctrl+Alt+/，选择Registry
 
 ![1562032558418](/img/assets_2019/1562032558418.png)
+
