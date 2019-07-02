@@ -11,9 +11,9 @@ tags:
 typora-root-url: ..
 ---
 
-## SpringBoot整合Mybatis
+## 1 SpringBoot整合Mybatis
 
-### 添加Mybatis的起步依赖
+### 1.1 添加Mybatis的起步依赖
 
 ```xml
 <!--mybatis起步依赖-->
@@ -24,7 +24,7 @@ typora-root-url: ..
 </dependency>
 ```
 
-###  添加数据库驱动坐标
+###  1.2 添加数据库驱动坐标
 
 ```xml
 <!-- MySQL连接驱动 -->
@@ -34,7 +34,7 @@ typora-root-url: ..
 </dependency>
 ```
 
-### 添加数据库连接信息
+### 1.3 添加数据库连接信息
 
 在application.properties中添加数据量的连接信息
 
@@ -46,7 +46,7 @@ spring.datasource.username=root
 spring.datasource.password=root
 ```
 
-### 5.1.4 创建user表
+### 1.4  创建user表
 
 在test数据库中创建user表
 
@@ -70,7 +70,7 @@ INSERT INTO `user` VALUES ('1', 'zhangsan', '123', '张三');
 INSERT INTO `user` VALUES ('2', 'lisi', '123', '李四');
 ```
 
-### 5.1.5 创建实体Bean
+### 1.5 创建实体Bean
 
 ```java
 public class User {
@@ -88,7 +88,7 @@ public class User {
 }
 ```
 
-### 5.1.6 编写Mapper
+### 1.6 编写Mapper
 
 ```java
 @Mapper
@@ -99,7 +99,7 @@ public interface UserMapper {
 
 注意：@Mapper标记该类是一个mybatis的mapper接口，可以被spring boot自动扫描到spring上下文中
 
-### 5.1.7 配置Mapper映射文件
+### 1.7 配置Mapper映射文件
 
 在src\main\resources\mapper路径下加入UserMapper.xml配置文件"
 
@@ -113,7 +113,7 @@ public interface UserMapper {
 </mapper>
 ```
 
-### 5.1.8 在application.properties中添加mybatis的信息
+### 1.8 在application.properties中添加mybatis的信息
 
 ```properties
 #spring集成Mybatis环境
@@ -123,7 +123,7 @@ mybatis.type-aliases-package=com.itheima.domain
 mybatis.mapper-locations=classpath:mapper/*Mapper.xml
 ```
 
-### 5.1.9 编写测试Controller
+### 1.9 编写测试Controller
 
 ```java
 @Controller
@@ -144,9 +144,9 @@ public class MapperController {
 
 
 
-## 5.2 SpringBoot整合Junit
+## 2 SpringBoot整合Junit
 
-### 5.2.1 添加Junit的起步依赖
+### 2.1 添加Junit的起步依赖
 
 ```xml
 <!--测试的起步依赖-->
@@ -157,7 +157,7 @@ public class MapperController {
 </dependency>
 ```
 
-### 5.2.2 编写测试类
+### 2.2 编写测试类
 
 ```java
 package com.itheima.test;
@@ -203,9 +203,9 @@ public final class SpringRunner extends SpringJUnit4ClassRunner
 
 
 
-## 5.3 SpringBoot整合Spring Data JPA
+## 3 SpringBoot整合Spring Data JPA
 
-### 5.3.1 添加Spring Data JPA的起步依赖
+### 3.1 添加Spring Data JPA的起步依赖
 
 ```xml
 <!-- springBoot JPA的起步依赖 -->
@@ -215,7 +215,7 @@ public final class SpringRunner extends SpringJUnit4ClassRunner
 </dependency>
 ```
 
-### 5.3.2 添加数据库驱动依赖
+### 3.2 添加数据库驱动依赖
 
 ```xml
 <!-- MySQL连接驱动 -->
@@ -225,7 +225,7 @@ public final class SpringRunner extends SpringJUnit4ClassRunner
 </dependency>
 ```
 
-### 5.3.3 在application.properties中配置数据库和jpa的相关属性
+### 3.3 在application.properties中配置数据库和jpa的相关属性
 
 ```properties
 #DB Configuration:
@@ -242,7 +242,7 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.hibernate.naming_strategy=org.hibernate.cfg.ImprovedNamingStrategy
 ```
 
-### 5.3.4 创建实体配置实体
+### 3.4 创建实体配置实体
 
 ```java
 @Entity
@@ -262,7 +262,7 @@ public class User {
 }
 ```
 
-### 5.3.5 编写UserRepository
+### 3.5 编写UserRepository
 
 ```java
 public interface UserRepository extends JpaRepository<User,Long>{
@@ -270,7 +270,7 @@ public interface UserRepository extends JpaRepository<User,Long>{
 }
 ```
 
-### 5.3.6 编写测试类
+### 3.6 编写测试类
 
 ```java
 @RunWith(SpringRunner.class)
@@ -302,9 +302,9 @@ public class JpaTest {
 
 
 
-## 5.4 SpringBoot整合Redis
+## 4 SpringBoot整合Redis
 
-### 5.4.1 添加redis的起步依赖
+### 4.1 添加redis的起步依赖
 
 ```xml
 <!-- 配置使用redis启动器 -->
@@ -314,7 +314,7 @@ public class JpaTest {
 </dependency>
 ```
 
-### 5.4.2 配置redis的连接信息
+### 4.2 配置redis的连接信息
 
 ```properties
 #Redis
@@ -322,7 +322,7 @@ spring.redis.host=127.0.0.1
 spring.redis.port=6379
 ```
 
-### 5.4.3 注入RedisTemplate测试redis操作
+### 4.3 注入RedisTemplate测试redis操作
 
 ```java
 @RunWith(SpringRunner.class)
