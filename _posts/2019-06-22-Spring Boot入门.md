@@ -41,8 +41,9 @@ typora-root-url: ..
 
 出现这种情况，并不是热部署配置问题，其根本原因是因为Intellij IEDA默认情况下不会自动编译，需要对IDEA进行自动编译的设置，如下：
 
-![](/I:/Java%2057%E6%9C%9F%20IDEA%E7%89%88/4.%E6%B5%81%E8%A1%8C%E6%A1%86%E6%9E%B6/%E9%98%B6%E6%AE%B54%20%E8%B5%84%E6%96%99/63.%E4%BC%9A%E5%91%98%E7%89%88(2.0)-%E5%B0%B1%E4%B8%9A%E8%AF%BE(2.0)-Spring%20Boot/89.SpringBoot/SpringBoot%E5%9F%BA%E7%A1%80/%E8%AE%B2%E4%B9%89(md,pdf)/img/19.png)
+![1562032546004](/img/assets_2019/1562032546004.png)
 
 然后 Shift+Ctrl+Alt+/，选择Registry
 
-![](/I:/Java%2057%E6%9C%9F%20IDEA%E7%89%88/4.%E6%B5%81%E8%A1%8C%E6%A1%86%E6%9E%B6/%E9%98%B6%E6%AE%B54%20%E8%B5%84%E6%96%99/63.%E4%BC%9A%E5%91%98%E7%89%88(2.0)-%E5%B0%B1%E4%B8%9A%E8%AF%BE(2.0)-Spring%20Boot/89.SpringBoot/SpringBoot%E5%9F%BA%E7%A1%80/%E8%AE%B2%E4%B9%89(md,pdf)/img/20.png)
+![1562032558418](/img/assets_2019/1562032558418.png)
+
