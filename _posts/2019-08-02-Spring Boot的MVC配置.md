@@ -61,7 +61,7 @@ public WebMvcConfg  implements  WebMvcConfigurer {
        
     /**
     *视图控制
-   	*以前写SpringMVC的时候，如果需要访问一个页面，必须要写Controller类，
+    *以前写SpringMVC的时候，如果需要访问一个页面，必须要写Controller类，
     *然后再写一个方法跳转到页面，感觉好麻烦，
     *其实重写WebMvcConfigurer中的addViewControllers方法即可达到效果了
     */
