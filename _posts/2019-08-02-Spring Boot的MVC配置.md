@@ -53,14 +53,16 @@ public WebMvcConfg  implements  WebMvcConfigurer {
     public void addInterceptors(
         InterceptorRegistry registry) {
     	
-        registry.addInterceptor(new MyInterceptor()).addPathPatterns("/**")；
+        registry.addInterceptor(new MyInterceptor()).addPathPatterns("/**");
     
     }
     
        
     /**
     视图控制
-    以前写SpringMVC的时候，如果需要访问一个页面，必须要写Controller类，然后再写一个方法跳转到页面，感觉好麻烦，其实重写WebMvcConfigurer中的addViewControllers方法即可达到效果了
+    以前写SpringMVC的时候，如果需要访问一个页面，必须要写Controller类，
+    然后再写一个方法跳转到页面，感觉好麻烦，
+    其实重写WebMvcConfigurer中的addViewControllers方法即可达到效果了
     */
     @Override
     public void addViewControllers(
@@ -71,6 +73,7 @@ public WebMvcConfg  implements  WebMvcConfigurer {
 
     /**
     比如，我们想自定义静态资源映射目录的话，只需重写addResourceHandlers方法即可。
+    
 	注：如果继承WebMvcConfigurationSupport类实现配置时必须要重写该方法
 	*/
 	@Override
