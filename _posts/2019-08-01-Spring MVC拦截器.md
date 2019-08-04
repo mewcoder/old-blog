@@ -121,6 +121,6 @@ public interface HandlerInterceptor {
 
 - **多拦截器的执行流程**
 
-![img](../img/assets_2019/1173674-20190412212035443-2023243854-1564906511127.png)
+![img](/img/assets_2019/1173674-20190412212035443-2023243854-1564906511127.png)
 
 ​	**preHandler顺序执行，postHandler和afterCompletion逆序执行**

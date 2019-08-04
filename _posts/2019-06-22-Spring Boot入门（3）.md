@@ -37,7 +37,7 @@ YML文件的扩展名可以使用.yml或者.yaml。
 
 - 示例代码：
 
-- ```yaml
+- ```yml
   name: haohao
   ```
 
@@ -59,17 +59,15 @@ YML文件的扩展名可以使用.yml或者.yaml。
 
 - 示例代码：
 
-- ```yaml
+- ```yml
   person:
     name: haohao
     age: 31
     addr: beijing
-  
   #或者
-  
   person: {name: haohao,age: 31,addr: beijing}
   ```
-
+  
 - 注意：key1前面的空格个数不限定，在yml语法中，相同缩进代表同一个级别
 
 #####  配置Map数据 
@@ -92,7 +90,7 @@ YML文件的扩展名可以使用.yml或者.yaml。
 
 - 示例代码：
 
-- ```yaml
+- ```yml
   city:
     - beijing
     - tianjin
