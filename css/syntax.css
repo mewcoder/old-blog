@@ -3,6 +3,7 @@
 
 .highlight pre code * {
   /*white-space: nowrap; */   // this sets all children inside to nowrap
+  font-size: 0.9rem;
 }
 
 .highlight pre {
