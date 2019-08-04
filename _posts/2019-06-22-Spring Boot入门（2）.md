@@ -11,11 +11,11 @@ tags:
 typora-root-url: ..
 ---
 
-## 配置文件分析
+### 配置文件分析
 
 ### 分析spring-boot-starter-parent
 
-按住Ctrl点击pom.xml中的spring-boot-starter-parent，跳转到了spring-boot-starter-parent的pom.xml，xml配置如下（只摘抄了部分重点配置）：
+按住**Ctrl**点击pom.xml中的spring-boot-starter-parent，跳转到了spring-boot-starter-parent的pom.xml，xml配置如下（只摘抄了部分重点配置）：
 
 ```xml
 <parent>
@@ -26,7 +26,7 @@ typora-root-url: ..
 </parent>
 ```
 
-按住Ctrl点击pom.xml中的spring-boot-starter-dependencies，跳转到了spring-boot-starter-dependencies的pom.xml，xml配置如下（只摘抄了部分重点配置）：
+按住**Ctrl**点击pom.xml中的spring-boot-starter-dependencies，跳转到了spring-boot-starter-dependencies的pom.xml，xml配置如下（只摘抄了部分重点配置）：
 
 ```xml
 <properties>
@@ -85,7 +85,7 @@ typora-root-url: ..
 
 ### 分析spring-boot-starter-web
 
-按住Ctrl点击pom.xml中的spring-boot-starter-web，跳转到了spring-boot-starter-web的pom.xml，xml配置如下（只摘抄了部分重点配置）：
+按住**Ctrl**点击pom.xml中的spring-boot-starter-web，跳转到了spring-boot-starter-web的pom.xml，xml配置如下（只摘抄了部分重点配置）：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -144,11 +144,11 @@ typora-root-url: ..
 
 ```
 
-从上面的spring-boot-starter-web的pom.xml中我们可以发现，spring-boot-starter-web就是将web开发要使用的**spring-web、spring-webmvc等坐标**进行了“打包”，这样我们的工程只要引入spring-boot-starter-web起步依赖的坐标就可以进行web开发了，同样体现了依赖传递的作用。
+从上面的spring-boot-starter-web的pom.xml中我们可以发现，spring-boot-starter-web就是将web开发要使用的**spring-web、spring-webmvc等坐标**进行了“打包”，这样我们的工程只要引入spring-boot-starter-web起步依赖的坐标就可以进行web开发了，同样体现了**依赖传递**的作用。
 
-## 自动配置原理解析
+### 自动配置原理解析
 
-按住Ctrl点击查看启动类MySpringBootApplication上的注解**@SpringBootApplication**
+按住**Ctrl**点击查看启动类MySpringBootApplication上的注解**@SpringBootApplication**
 
 ```java
 @SpringBootApplication
@@ -159,7 +159,7 @@ public class MySpringBootApplication {
 }
 ```
 
-### @SpringBootApplication的源码
+#### @SpringBootApplication的源码
 
 ```java
 @Target(ElementType.TYPE)
@@ -189,13 +189,13 @@ public @interface SpringBootApplication {
 
 其中，
 
-@ComponentScan：开启注解扫描
+@**ComponentScan**：开启注解扫描
 
-@SpringBootConfiguration：等同与@Configuration，既标注该类是Spring的一个配置类
+@**SpringBootConfiguration**：等同与@Configuration，既标注该类是Spring的一个配置类
 
-@EnableAutoConfiguration：开启自动配置
+@**EnableAutoConfiguration**：开启自动配置
 
-### 注解@EnableAutoConfiguration
+#### 注解@EnableAutoConfiguration
 
 ```java
 @Target(ElementType.TYPE)
@@ -213,7 +213,7 @@ public @interface EnableAutoConfiguration {
 
 **翻译名为自动配置的选择器的类。这个类其实就是自动配置的加载选择器。**
 
-### AutoConfigurationImportSelector源码
+#### AutoConfigurationImportSelector源码
 
 ```java
 public String[] selectImports(AnnotationMetadata annotationMetadata) {
@@ -305,7 +305,7 @@ prefix = "server" 表示SpringBoot配置文件中的前缀，SpringBoot会将配
 
 ![](/img/assets_2019/1562033201215.png)
 
-## 自动配置总结
+### 自动配置总结
 
 1. SpringBoot 启动的时候加载主配置类，开启了自动配置功能 @EnableAutoConfiguration 。
 2. @EnableAutoConfiguration 给容器导入META-INF/spring.factories 里定义的自动配置类。

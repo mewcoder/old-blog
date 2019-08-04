@@ -23,25 +23,25 @@ SpringBoot默认会从Resources目录下加载application.properties或applicati
 
 ### application.yml配置文件
 
-####  yml配置文件简介
+#### yml配置文件简介
 
 YML文件格式是YAML (YAML Aint Markup Language)编写的文件格式，YAML是一种直观的能够被电脑识别的的数据数据序列化格式，并且容易被人类阅读，容易和脚本语言交互的，可以被支持YAML库的不同的编程语言程序导入，比如： C/C++, Ruby, Python, Java, Perl, C#, PHP等。YML文件是以数据为核心的，比传统的xml方式更加简洁。
 
 YML文件的扩展名可以使用.yml或者.yaml。
 
-####  yml配置文件的语法
+#### yml配置文件的语法
 
-#####  配置普通数据
+##### 配置普通数据
 
 - 语法： key: value
 
 - 示例代码：
 
-- ```yml
+  ```yml
   name: haohao
   ```
 
-- 注意：value之前有一个空格
+- **注意：value之前有一个空格**
 
 ##### 配置对象数据
 
@@ -59,7 +59,7 @@ YML文件的扩展名可以使用.yml或者.yaml。
 
 - 示例代码：
 
-- ```yml
+  ```yml
   person:
     name: haohao
     age: 31
@@ -67,8 +67,8 @@ YML文件的扩展名可以使用.yml或者.yaml。
   #或者
   person: {name: haohao,age: 31,addr: beijing}
   ```
-  
-- 注意：key1前面的空格个数不限定，在yml语法中，相同缩进代表同一个级别
+
+- **注意：key1前面的空格个数不限定，在yml语法中，相同缩进代表同一个级别**
 
 #####  配置Map数据 
 
@@ -90,7 +90,7 @@ YML文件的扩展名可以使用.yml或者.yaml。
 
 - 示例代码：
 
-- ```yml
+  ```yml
   city:
     - beijing
     - tianjin
@@ -98,7 +98,6 @@ YML文件的扩展名可以使用.yml或者.yaml。
     - chongqing
     
   #或者
-  
   city: [beijing,tianjin,shanghai,chongqing]
   
   #集合中的元素是对象形式
@@ -114,7 +113,9 @@ YML文件的扩展名可以使用.yml或者.yaml。
       score: 90
   ```
 
-- 注意：value1与之间的 - 之间存在一个空格
+- **注意：value1与之间的 - 之间存在一个空格**
+
+
 
 ###  SpringBoot配置信息的查询
 
@@ -193,7 +194,7 @@ server:
 
 ###  使用注解@Value映射
 
-我们可以通过@Value注解将配置文件中的值映射到一个Spring管理的Bean的字段上
+**我们可以通过@Value注解将配置文件中的值映射到一个Spring管理的Bean的字段上**
 
 例如：
 
@@ -284,5 +285,5 @@ public class QuickStartController {
 
 
 
-注意：使用@ConfigurationProperties方式可以进行配置文件与实体字段的自动映射，但需要字段必须提供set方法才可以，而使用@Value注解修饰的字段不需要提供set方法
+**注意：使用@ConfigurationProperties方式可以进行配置文件与实体字段的自动映射，但需要字段必须提供set方法才可以，而使用@Value注解修饰的字段不需要提供set方法**
 
