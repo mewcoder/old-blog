@@ -44,7 +44,7 @@ Spring Boot为Spring MVC提供自动配置，适用于大多数应用程序。
 ```java
 @Configuration
 /**
-有一些教程是用的“WebMvcConfigurerAdapter”接口，不过在spring5.0版本后这个类被丢弃了 WebMvcConfigurerAdapter  ，虽然还可以用，但是看起来不好。
+*有一些教程是用的“WebMvcConfigurerAdapter”接口，不过在spring5.0版本后这个类被丢弃了 *WebMvcConfigurerAdapter  ，虽然还可以用，但是看起来不好。
 */
 public WebMvcConfg  implements  WebMvcConfigurer { 
     
@@ -59,10 +59,10 @@ public WebMvcConfg  implements  WebMvcConfigurer {
     
        
     /**
-    视图控制
-    以前写SpringMVC的时候，如果需要访问一个页面，必须要写Controller类，
-    然后再写一个方法跳转到页面，感觉好麻烦，
-    其实重写WebMvcConfigurer中的addViewControllers方法即可达到效果了
+    *视图控制
+   	*以前写SpringMVC的时候，如果需要访问一个页面，必须要写Controller类，
+    *然后再写一个方法跳转到页面，感觉好麻烦，
+    *其实重写WebMvcConfigurer中的addViewControllers方法即可达到效果了
     */
     @Override
     public void addViewControllers(
@@ -72,9 +72,8 @@ public WebMvcConfg  implements  WebMvcConfigurer {
     }
 
     /**
-    比如，我们想自定义静态资源映射目录的话，只需重写addResourceHandlers方法即可。
-    
-	注：如果继承WebMvcConfigurationSupport类实现配置时必须要重写该方法
+    *比如，我们想自定义静态资源映射目录的话，只需重写addResourceHandlers方法即可。
+	*注：如果继承WebMvcConfigurationSupport类实现配置时必须要重写该方法
 	*/
 	@Override
     public void addResourceHandlers(
