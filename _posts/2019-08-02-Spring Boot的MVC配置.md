@@ -42,10 +42,11 @@ Spring Boot为Spring MVC提供自动配置，适用于大多数应用程序。
 自定义实例可以声明WebMvcRegistrationsAdapter实例来提供这些组件。
 
 ```java
-@Configuration
 /**
-*有一些教程是用的“WebMvcConfigurerAdapter”接口，不过在spring5.0版本后这个类被丢弃了 *WebMvcConfigurerAdapter  ，虽然还可以用，但是看起来不好。
+*有一些教程是用的“WebMvcConfigurerAdapter”接口，不过在spring5.0版本后这个类被丢弃
+*WebMvcConfigurerAdapter  ，虽然还可以用，但是看起来不好。
 */
+@Configuration
 public WebMvcConfg  implements  WebMvcConfigurer { 
     
    /* 拦截器 */
@@ -104,7 +105,7 @@ public WebMvcConfg  implements  WebMvcConfigurer {
 
     }
 
-    还有很多方法..
+    //还有很多方法..
     
 }
 ```
