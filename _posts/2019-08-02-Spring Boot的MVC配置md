@@ -50,7 +50,8 @@ public WebMvcConfg  implements  WebMvcConfigurer {
     
    /* 拦截器 */
     @Override
-    public void addInterceptors(InterceptorRegistry registry) {
+    public void addInterceptors(
+        InterceptorRegistry registry) {
     	
         registry.addInterceptor(new MyInterceptor()).addPathPatterns("/**")；
     
@@ -62,7 +63,8 @@ public WebMvcConfg  implements  WebMvcConfigurer {
     以前写SpringMVC的时候，如果需要访问一个页面，必须要写Controller类，然后再写一个方法跳转到页面，感觉好麻烦，其实重写WebMvcConfigurer中的addViewControllers方法即可达到效果了
     */
     @Override
-    public void addViewControllers(ViewControllerRegistry registry) {
+    public void addViewControllers(
+        ViewControllerRegistry registry) {
         	//aaa请求会映射到aaa界面
     		registry.addViewController("/aaa").setViewName("aaa");
     }
@@ -72,7 +74,8 @@ public WebMvcConfg  implements  WebMvcConfigurer {
 	注：如果继承WebMvcConfigurationSupport类实现配置时必须要重写该方法
 	*/
 	@Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+    public void addResourceHandlers(
+        ResourceHandlerRegistry registry) {
     	registry.addResourceHandler("/**").addResourceLocations("classpath:/");
        
     }
@@ -80,19 +83,22 @@ public WebMvcConfg  implements  WebMvcConfigurer {
      
     
     @Override
-    public void addArgumentResolvers(List<HandlerMethodArgumentResolver> resolvers) {
+    public void addArgumentResolvers(
+        List<HandlerMethodArgumentResolver> resolvers) {
 
     }
 
     /* 添加跨域映射 */
     @Override
-    public void addCorsMappings(CorsRegistry registry) {
+    public void addCorsMappings(
+        CorsRegistry registry) {
 
     }
 
     /* 配置视图解析器 */
     @Override
-    public void configureViewResolvers(ViewResolverRegistry registry) {
+    public void configureViewResolvers(
+        ViewResolverRegistry registry) {
 
     }
 

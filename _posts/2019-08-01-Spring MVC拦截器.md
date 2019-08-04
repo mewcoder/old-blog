@@ -37,7 +37,9 @@ public interface HandlerInterceptor {
 		return true放行，执行下一个拦截器，如果没有拦截器，执行controller中的方法。
 		return false不放行，不会执行controller中的方法
    */
-    boolean preHandle(HttpServletRequest request, HttpServletResponse response,Object handler)throws Exception;
+    boolean preHandle(HttpServletRequest request,
+                      HttpServletResponse response,
+                      Object handler)throws Exception;
 
    /*
 	 postHandle是controller方法执行后执行的方法，在视图执行前。
@@ -45,14 +47,18 @@ public interface HandlerInterceptor {
 		如果指定了跳转的页面，那么controller方法跳转的页面将不会显示。
    */
 
-    void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception;
+    void postHandle(HttpServletRequest request, 
+                    HttpServletResponse response, 
+                    Object handler, ModelAndView modelAndView) throws Exception;
 
    /*
    postHandle方法是在JSP执行后执行，request或者response不能再跳转页面了
 	整个请求处理完毕回调方法，即在视图渲染完毕时回调，如性能监控中我们可以在此记录结束时间并输出消耗时间，还可以进行一些资源清理，类似于try-catch-finally中的finally，但仅调用处理器执行链中
    */
 
-    void afterCompletion( HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception;
+    void afterCompletion( HttpServletRequest request,
+                         HttpServletResponse response,
+                         Object handler, Exception ex) throws Exception;
     
 }
 ```
