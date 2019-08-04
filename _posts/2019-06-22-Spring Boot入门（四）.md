@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Spring Boot入门（四）
+title:      Spring Boot入门（4）
 subtitle:   Spring Boot与整合其他技术 
 date:       2019-06-22
 author:     ctrlcoder

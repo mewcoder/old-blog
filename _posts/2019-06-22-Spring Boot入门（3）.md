@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Spring Boot入门（三）
+title:      Spring Boot入门（3）
 subtitle:   Spring Boot的配置文件
 date:       2019-06-22
 author:     ctrlcoder

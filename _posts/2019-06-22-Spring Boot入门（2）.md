@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Spring Boot入门（二）
+title:      Spring Boot入门（2）
 subtitle:   SpringBoot原理分析
 date:       2019-06-22
 author:     ctrlcoder
@@ -246,11 +246,11 @@ protected List<String> getCandidateConfigurations(AnnotationMetadata metadata,
 
 其中，**SpringFactoriesLoader.loadFactoryNames** 方法的作用就是从META-INF/spring.factories文件中读取指定类对应的类名称列表 
 
-![1562035000210](/img/assets_2019/1562035000210.png)
+![1562035000210](../img/assets_2019/1562035000210.png)
 
 下图是 DEBUG 模式下筛选之后的结果，因为我只添加了 web 模块，所以只有 web 相关的自动配置。
 
-![Springboot 系列（三）Spring Boot 自动配置](/img/assets_2019/java1-1552357728.jpg)
+![Springboot 系列(三)Spring Boot 自动配置](../img/assets_2019/java1-1552357728.jpg)
 
 ### xxxAutoConfiguration 与 xxxProperties
 
@@ -303,7 +303,7 @@ public class ServerProperties {
 
 prefix = "server" 表示SpringBoot配置文件中的前缀，SpringBoot会将配置文件中以server开始的属性映射到该类的字段中。映射关系如下：
 
-![](/img/assets_2019/1562033201215.png)
+![](../img/assets_2019/1562033201215.png)
 
 ## 自动配置总结
 

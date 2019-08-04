@@ -22,7 +22,7 @@ SpringCloud GitHub Demo(看完文章的同学可以自己练手玩玩)：
 
 项目结构图：
 
-![img](/img/assets_2019/640.webp)
+![img](../img/assets_2019/640.webp)
 
 # 二、集群/分布式/微服务/SOA是什么？
 
