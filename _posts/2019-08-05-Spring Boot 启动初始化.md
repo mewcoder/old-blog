@@ -7,7 +7,7 @@ author:     ctrlcoder
 header-img: 
 catalog: true
 tags:
-    - 工具
+    - Spring Boot
 typora-root-url: ..
 ---
 
