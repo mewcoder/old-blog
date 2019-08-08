@@ -2,7 +2,7 @@
 layout:     post
 title:      Collections类和Arrays类
 subtitle:   
-date:       2019-08-08
+date:       201-08-08
 author:     ctrlcoder
 header-img: 
 catalog: true
