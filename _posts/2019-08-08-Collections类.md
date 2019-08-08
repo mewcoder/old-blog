@@ -2,7 +2,7 @@
 layout:     post
 title:      Collections类和Arrays类
 subtitle:   
-date:       2018-01-01
+date:       2019-08-08
 author:     ctrlcoder
 header-img: 
 catalog: true
@@ -227,4 +227,3 @@ Map map = Collections. synchronizedMap(new HashMap());
 **asList(T... a)**
 
 由给定的数组a，返回一个固定大小的List对象。在这里，着重解释一下前面这句话的深层含义，我们可以看Arrays类的源码，来帮助我们理解。
-
