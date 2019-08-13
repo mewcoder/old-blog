@@ -1550,7 +1550,7 @@ pre {
   border-radius: 4px;
 }
 pre code {
-  padding: 0;
+  padding: 15px;
   font-size: inherit;
   color: inherit;
   white-space: pre-wrap;
