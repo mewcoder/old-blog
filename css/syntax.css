@@ -2,14 +2,7 @@
 /* from http://stackoverflow.com/a/23393920 */
 
 
-.card {
-  background: white;
-  width: 300px;
-  height: 300px;
-  position: relative;
-  margin: 16px;
-  border-radius: 2px;
-}
+
 
 /*
  * GitHub style for Pygments syntax highlighter, for use with Jekyll
@@ -260,3 +253,14 @@
    text-align: right;
    border-radius: 0px;
  }
+ /* Landscape phones and down */
+@media (max-width: 480px) {
+  .highlighter-rouge .highlight {
+    margin-left: -15px;
+    margin-right: -15px;
+    border-radius: 0px;
+  }
+  .highlighter-rouge .highlight td.rouge-gutter {
+    width: 46px;
+  }
+}
