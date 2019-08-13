@@ -20,66 +20,247 @@
  * Courtesy of GitHub.com
  */
 
-.highlight pre, pre, .highlight .hll { background-color: #f3f3f3; border: 1px solid #000; padding: 6px 10px; border-radius: 3px; }
-.highlight .c { color: #A45E00;  }
-.highlight .err { color: #a61717; background-color: #e3d2d2; }
-.highlight .k { font-weight: bold; }
-.highlight .o { font-weight: bold; }
-.highlight .cm { color: #A45E00;  }
-.highlight .cp { color: #999999; font-weight: bold; }
-.highlight .c1 { color: #A45E00;  }
-.highlight .cs { color: #999999; font-weight: bold; font-style: italic; }
-.highlight .gd { color: #000000; background-color: #ffdddd; }
-.highlight .gd .x { color: #000000; background-color: #ffaaaa; }
-.highlight .ge { font-style: italic; }
-.highlight .gr { color: #aa0000; }
-.highlight .gh { color: #999999; }
-.highlight .gi { color: #000000; background-color: #ddffdd; }
-.highlight .gi .x { color: #000000; background-color: #aaffaa; }
-.highlight .go { color: #888888; }
-.highlight .gp { color: #555555; }
-.highlight .gs { font-weight: bold; }
-.highlight .gu { color: #800080; font-weight: bold; }
-.highlight .gt { color: #aa0000; }
-.highlight .kc { font-weight: bold; }
-.highlight .kd { font-weight: bold; }
-.highlight .kn { font-weight: bold; }
-.highlight .kp { font-weight: bold; }
-.highlight .kr { font-weight: bold; }
-.highlight .kt { color: #445588; font-weight: bold; }
-.highlight .m { color: #009999; }
-.highlight .s { color: #dd1144; }
-.highlight .n { color: #333333; }
-.highlight .na { color: teal; }
-.highlight .nb { color: #0086b3; }
-.highlight .nc { color: #445588; font-weight: bold; }
-.highlight .no { color: teal; }
-.highlight .ni { color: purple; }
-.highlight .ne { color: #990000; font-weight: bold; }
-.highlight .nf { color: #990000; font-weight: bold; }
-.highlight .nn { color: #555555; }
-.highlight .nt { color: navy; }
-.highlight .nv { color: teal; }
-.highlight .ow { font-weight: bold; }
-.highlight .w { color: #bbbbbb; }
-.highlight .mf { color: #009999; }
-.highlight .mh { color: #009999; }
-.highlight .mi { color: #009999; }
-.highlight .mo { color: #009999; }
-.highlight .sb { color: #dd1144; }
-.highlight .sc { color: #dd1144; }
-.highlight .sd { color: #dd1144; }
-.highlight .s2 { color: #dd1144; }
-.highlight .se { color: #dd1144; }
-.highlight .sh { color: #dd1144; }
-.highlight .si { color: #dd1144; }
-.highlight .sx { color: #dd1144; }
-.highlight .sr { color: #009926; }
-.highlight .s1 { color: #dd1144; }
-.highlight .ss { color: #990073; }
-.highlight .bp { color: #999999; }
-.highlight .vc { color: teal; }
-.highlight .vg { color: teal; }
-.highlight .vi { color: teal; }
-.highlight .il { color: #009999; }
-.highlight .gc { color: #999; background-color: #EAF2F5; }
+ .highlight,
+ pre.highlight {
+   background: #282c34;
+   color: #abb2bf;
+ }
+ .highlight pre {
+   background: #282c34;
+ }
+ .highlight .hll {
+   background: #282c34;
+ }
+ .highlight .c {
+   color: #5c6370;
+   font-style: italic;
+ }
+ .highlight .err {
+   color: #960050;
+   background-color: #1e0010;
+ }
+ .highlight .k {
+   color: #c678dd;
+ }
+ .highlight .l {
+   color: #98c379;
+ }
+ .highlight .n {
+   color: #abb2bf;
+ }
+ .highlight .o {
+   color: #abb2bf;
+ }
+ .highlight .p {
+   color: #abb2bf;
+ }
+ .highlight .cm {
+   color: #5c6370;
+   font-style: italic;
+ }
+ .highlight .cp {
+   color: #5c6370;
+   font-style: italic;
+ }
+ .highlight .c1 {
+   color: #5c6370;
+   font-style: italic;
+ }
+ .highlight .cs {
+   color: #5c6370;
+   font-style: italic;
+ }
+ .highlight .ge {
+   font-style: italic;
+ }
+ .highlight .gs {
+   font-weight: 700;
+ }
+ .highlight .kc {
+   color: #c678dd;
+ }
+ .highlight .kd {
+   color: #c678dd;
+ }
+ .highlight .kn {
+   color: #c678dd;
+ }
+ .highlight .kp {
+   color: #c678dd;
+ }
+ .highlight .kr {
+   color: #c678dd;
+ }
+ .highlight .kt {
+   color: #c678dd;
+ }
+ .highlight .ld {
+   color: #98c379;
+ }
+ .highlight .m {
+   color: #d19a66;
+ }
+ .highlight .s {
+   color: #98c379;
+ }
+ .highlight .na {
+   color: #d19a66;
+ }
+ .highlight .nb {
+   color: #e5c07b;
+ }
+ .highlight .nc {
+   color: #e5c07b;
+ }
+ .highlight .no {
+   color: #e5c07b;
+ }
+ .highlight .nd {
+   color: #e5c07b;
+ }
+ .highlight .ni {
+   color: #e5c07b;
+ }
+ .highlight .ne {
+   color: #e5c07b;
+ }
+ .highlight .nf {
+   color: #abb2bf;
+ }
+ .highlight .nl {
+   color: #e5c07b;
+ }
+ .highlight .nn {
+   color: #abb2bf;
+ }
+ .highlight .nx {
+   color: #abb2bf;
+ }
+ .highlight .py {
+   color: #e5c07b;
+ }
+ .highlight .nt {
+   color: #e06c75;
+ }
+ .highlight .nv {
+   color: #e5c07b;
+ }
+ .highlight .ow {
+   font-weight: 700;
+ }
+ .highlight .w {
+   color: #f8f8f2;
+ }
+ .highlight .mf {
+   color: #d19a66;
+ }
+ .highlight .mh {
+   color: #d19a66;
+ }
+ .highlight .mi {
+   color: #d19a66;
+ }
+ .highlight .mo {
+   color: #d19a66;
+ }
+ .highlight .sb {
+   color: #98c379;
+ }
+ .highlight .sc {
+   color: #98c379;
+ }
+ .highlight .sd {
+   color: #98c379;
+ }
+ .highlight .s2 {
+   color: #98c379;
+ }
+ .highlight .se {
+   color: #98c379;
+ }
+ .highlight .sh {
+   color: #98c379;
+ }
+ .highlight .si {
+   color: #98c379;
+ }
+ .highlight .sx {
+   color: #98c379;
+ }
+ .highlight .sr {
+   color: #56b6c2;
+ }
+ .highlight .s1 {
+   color: #98c379;
+ }
+ .highlight .ss {
+   color: #56b6c2;
+ }
+ .highlight .bp {
+   color: #e5c07b;
+ }
+ .highlight .vc {
+   color: #e5c07b;
+ }
+ .highlight .vg {
+   color: #e5c07b;
+ }
+ .highlight .vi {
+   color: #e06c75;
+ }
+ .highlight .il {
+   color: #d19a66;
+ }
+ .highlight .gu {
+   color: #75715e;
+ }
+ .highlight .gd {
+   color: #f92672;
+ }
+ .highlight .gi {
+   color: #a6e22e;
+ }
+ .highlighter-rouge .highlight {
+   margin-bottom: 10px;
+   border-radius: 6px;
+ }
+ .highlighter-rouge .highlight pre {
+   font-size: 14px;
+   line-height: 1.5;
+   color: #555;
+   background: transparent;
+   border: 0;
+   margin: 0;
+   padding: 0;
+   word-wrap: normal;
+ }
+ .highlighter-rouge .highlight .rouge-table .rouge-gutter,
+ .highlighter-rouge .highlight .rouge-table .rouge-code {
+   border: 0 !important;
+ }
+ .highlighter-rouge .highlight .rouge-code pre {
+   color: #abb2bf;
+ }
+ .highlighter-rouge .highlight .table-responsive {
+   margin: 0px;
+   border: 0px;
+ }
+ .highlighter-rouge .highlight .table {
+   margin: 0px;
+   table-layout: fixed;
+ }
+ .highlighter-rouge .highlight table > tbody > tr > td {
+   margin: 0;
+   border: 0;
+   padding: 0;
+ }
+ .highlighter-rouge .highlight table > tbody > tr > td > pre {
+   padding: 14px;
+ }
+ .highlighter-rouge .highlight td.rouge-gutter {
+   width: 56px;
+ }
+ .highlighter-rouge .highlight .lineno {
+   text-align: right;
+   border-radius: 0px;
+ }
