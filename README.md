@@ -1,5 +1,3 @@
-## [我的博客](http://ctrlcoder.github.io)
-
 ## 致谢
 
 这个模板是从[这里](https://github.com/qiubaiying/qiubaiying.github.io) fork。 
